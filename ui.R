@@ -14,6 +14,8 @@ library(vroom)
 library(hrbrthemes)
 library(DT)
 library(lares, include.only = "plot_timeline")
+# lares defaults to "Arial Narrow"; skip its font lookup and use ggplot2's default font
+Sys.setenv(LARES_FONT = "ignore")
 library(readxl)
 library(pivottabler)
 #library(ggpubr)
